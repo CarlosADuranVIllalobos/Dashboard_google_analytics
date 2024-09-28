@@ -1,4 +1,4 @@
-# User Engagement Analytics Dashboard
+# User Engagement Analytics Dashboard using Power BI and SQL
 
 This repository hosts the User Engagement Analytics Dashboard project, designed to leverage extensive user interaction data from a publicly available dataset on Kaggle to provide actionable insights for optimizing user engagement and app functionality.
 
@@ -53,10 +53,10 @@ Instructions on how to access and interact with the dashboards, including how to
 
 ## Dashboard Components
 
-- **User Acquisition Analysis**: Visualizations tracking how users interact with the platform.
-- **Engagement Metrics**: Insights into session duration, page views, and user pathways.
-- **Marketing Effectiveness**: Analysis of user responses to different marketing campaigns.
-- **Sales Performance**: Visuals showcasing total revenue, average order value, and sales growth over time.
+- **Main Analysis Report**: Total sales, sales indicators, forecasting, gender distribution, customer segmentation by age, churn prediction, and CLV prediction.
+- **Other Analytics**: Average sales and CLV by product category, total sales by payment method, and customer purchase frequency.
+- **User Acquisition Analysis**: Growth over time by gender and product category.
+
 
 ## Contributing
 
