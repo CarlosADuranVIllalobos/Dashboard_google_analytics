@@ -33,20 +33,25 @@ Shriyash Jagtap. (2023). E-commerce Customer for Behavior Analysis [Data set]. K
 ## Project Structure
 
 ```plaintext
-User_Engagement_Analytics_Dashboard/
+Power_BI_Dashboard/
 ├── dashboards/
-│   ├── user_engagement_dashboard.pbix# Main Power BI dashboard file
-│   ├── user_engagement_dashboard.pdf# Main dashboard file in PDF format
+│   ├── BP_CI_dashboard.pbix                 # Main Power BI dashboard file
+│   ├── BP_CI_dashboard.pdf                  # Exported version of the dashboard in PDF format
 ├── data/
-│   ├── ecommerce_customer_data_large.csv                        # Dataset from Kaggle
-│   ├── cleaned_ecommerce_customer_data_with_metrics.csv         # Cleaned dataset after preprocessing
-│   ├── sql_database.csv                                         # SQL database
+│   ├── ecommerce_customer_data_large.csv    # Raw Kaggle dataset for ecommerce customer analysis
+│   ├── cleaned_ecommerce_customer_data_with_metrics.csv  # Cleaned dataset after preprocessing and feature engineering
+│   ├── sql_database.csv                     # Data extracted from SQL database used in the analysis
+├── results/
+│   ├── clv_distribution.png                 # Distribution plot of Customer Lifetime Value (CLV) 
+│   ├── clv_residuals.png                    # Residuals plot for CLV prediction model evaluation
+│   ├── feature_importance_churn.png         # Bar chart showing the most important features driving churn prediction
+│   ├── predictions.csv                      # CSV file containing model predictions for both churn and CLV
 ├── scripts/
-│   ├── extract_data.py               # Script for data cleaning, preparation and metrics calculation
-│   ├── predictive_modeling.py        # Script for predictive modeling
-│   ├── transform_data.sql            # SQL scripts for data manipulation
-├── README.md                         # Project README with instructions
-├── LICENSE.md                        # License information
+│   ├── extract_data.py                      # Python script for data cleaning, preparation, and metrics calculation
+│   ├── predictive_modeling.py               # Python script for churn and CLV predictive modeling and evaluation
+│   ├── transform_data.sql                   # SQL script for data extraction and transformation
+├── README.md                                # Project README with instructions and overview of the dashboard
+├── LICENSE.md                               # License information for the project
 ```
 
 ## Tools and Technologies
