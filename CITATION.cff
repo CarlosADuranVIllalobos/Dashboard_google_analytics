@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+authors:
+  - family-names: "Duran Villalobos"
+    given-names: "Carlos Alberto"
+title: "Power_BI_Dashboard"
+version: "1.0.0"
+date-released: "2024-09-28"
+url: "https://github.com/CarlosADuranVIllalobos/Power_BI_Dashboard"
+repository-code: "https://github.com/CarlosADuranVIllalobos/Power_BI_Dashboard"
+license: "MIT"
