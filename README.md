@@ -73,8 +73,6 @@ Power_BI_Dashboard/
 
 ## Usage
 
-## Usage
-
 1. **Data Preprocessing**:
    The dataset `ecommerce_customer_data_large.csv` from Kaggle is imported and cleaned using the `extract_data.py` script. Key metrics such as Customer Lifetime Value (CLV) and Churn Rate are calculated. The cleaned data is saved as `cleaned_ecommerce_customer_data_with_metrics.csv`.
 
