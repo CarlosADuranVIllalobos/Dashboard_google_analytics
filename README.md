@@ -46,7 +46,6 @@ Shriyash Jagtap. (2023). E-commerce Customer for Behavior Analysis [Data set]. K
 4. **Data Transformation to SQL**: The processed data is transformed and stored in an SQL database. This step leverages SQL's strengths for efficient data querying, storage, and integration with Power BI. 
 5. **Dashboard Development**: Design and develop dynamic dashboards in Power BI.
 6. **Predictive Modeling**: Implement predictive models to forecast customer churn and lifetime value.
-7. **Automation and Reporting**: Implement automation scripts in Power BI to update dashboards regularly.
 
 ## Usage
 
