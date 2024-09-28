@@ -2,6 +2,8 @@
 
 This dashboard, built using Power BI and powered by SQL databases, offers comprehensive insights into sales performance, customer behavior, and user acquisition trends, leveraging advanced analytics and forecasting to support data-driven business decisions.
 
+![Main Analysis Report](dashboard.png) <!-- This image corresponds to the Main Analysis Report -->
+
 ## Table of Contents
 
 - [Project Overview](#project-overview)
@@ -85,12 +87,13 @@ Power_BI_Dashboard/
 4. **Power BI Dashboard**:
    Open `BP_CI_dashboard.pbix` in Power BI. The dashboard uses the SQL database and cleaned CSV data to generate visual insights on sales, churn prediction, and customer segmentation.
 
+![Features of Importance for Churn Prediction](results/feature_importance_churn.png) <!-- Showing feature importance plot in churn prediction -->
+
 ## Dashboard Components
 
 - **Main Analysis Report**: Total sales, sales indicators, forecasting, gender distribution, customer segmentation by age, churn prediction, and CLV prediction.
 - **Other Analytics**: Average sales and CLV by product category, total sales by payment method, and customer purchase frequency.
 - **User Acquisition Analysis**: Growth over time by gender and product category.
-
 
 ## Contributing
 
