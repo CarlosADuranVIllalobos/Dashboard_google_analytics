@@ -2,6 +2,21 @@
 """
 Created on Tue Aug 20 16:57:09 2024
 
+predictive_modeling.py
+This script is designed to build and evaluate predictive models for customer churn and Customer Lifetime Value (CLV) using e-commerce data. It incorporates data preprocessing, 
+feature engineering, hyperparameter tuning, and evaluation for both classification (churn) and regression (CLV) models. The script leverages machine learning algorithms such as 
+XGBoost and RandomForest, and applies techniques like SMOTE to handle class imbalance. The outputs include predictions, feature importance plots, residual analysis, and model 
+performance metrics, all of which are saved for further analysis and visualization in Power BI.
+
+Key functionalities:
+
+Data Preprocessing: Clean and preprocess the dataset, engineer additional features such as customer purchase frequency, time since last purchase, and product category preferences.
+Hyperparameter Tuning: Tune hyperparameters for both classification and regression models using RandomizedSearchCV.
+Churn Prediction: Train and evaluate a classifier to predict customer churn.
+CLV Prediction: Train and evaluate a regression model to predict Customer Lifetime Value, with optional log transformation for skewed data.
+Model Evaluation: Generate key metrics such as accuracy, mean squared error (MSE), and visualizations like residuals and feature importance.
+Result Export: Save predictions, metrics, and plots for use in further analysis and reporting.
+
 @author: Carlos
 """
 import joblib
@@ -26,28 +41,6 @@ def load_data(filepath):
     """
     return pd.read_csv(filepath)
 
-# def prepare_features(df):
-#     """
-#     Prepare features for modeling. This includes selecting relevant columns,
-#     encoding categorical variables, and scaling features as necessary.
-#     """
-#     # Define the features and target for Churn Prediction and CLV Prediction
-#     features = ['Customer Age', 'Gender', 'Total Purchase Amount', 'Returns']
-    
-#     # Separate features and target variables
-#     X = df[features]
-#     y_churn = df['Churn']
-#     y_clv = df['Customer Lifetime Value (CLV)']
-    
-#     # Define preprocessing for categorical and numerical features
-#     preprocessor = ColumnTransformer(
-#         transformers=[
-#             ('num', StandardScaler(), ['Customer Age', 'Total Purchase Amount', 'Returns']),
-#             ('cat', OneHotEncoder(), ['Gender'])
-#         ])
-    
-#     # Return features, targets, and preprocessor
-#     return X, y_churn, y_clv, preprocessor
 def prepare_features(df):
     """
     Prepare features for modeling. This includes selecting relevant columns,
