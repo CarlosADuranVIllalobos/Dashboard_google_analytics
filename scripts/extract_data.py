@@ -7,6 +7,13 @@ This script processes e-commerce customer data for analytical and predictive mod
 removing unnecessary columns, and then calculates important business metrics such as Customer Lifetime Value (CLV), Churn Rate, and Conversion Rate. These metrics are essential for 
 evaluating customer behavior and business performance. Finally, the cleaned dataset with calculated metrics is saved for further analysis and use in machine learning models.
 
+Steps in the script:
+
+Load Data: Load the raw dataset from a CSV file.
+Clean Data: Handle missing values, remove unnecessary or sensitive columns, and convert data types as needed (e.g., dates).
+Calculate Metrics: Compute key business metrics like CLV, churn rate, and conversion rate.
+Save Cleaned Data: Save the cleaned and processed dataset to a new CSV file, ready for use in further analysis or predictive modeling.
+
 @author: Carlos A. Duran Viilalobos
 """
 
