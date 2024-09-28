@@ -2,7 +2,12 @@
 """
 Created on Mon Aug 19 23:32:50 2024
 
-@author: Carlos
+extract_data.py
+This script processes e-commerce customer data for analytical and predictive modeling purposes. It starts by loading a raw dataset, cleans the data by handling missing values and 
+removing unnecessary columns, and then calculates important business metrics such as Customer Lifetime Value (CLV), Churn Rate, and Conversion Rate. These metrics are essential for 
+evaluating customer behavior and business performance. Finally, the cleaned dataset with calculated metrics is saved for further analysis and use in machine learning models.
+
+@author: Carlos A. Duran Viilalobos
 """
 
 import pandas as pd
