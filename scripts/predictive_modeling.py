@@ -256,10 +256,6 @@ def plot_feature_importance(model, preprocessor, title="Top 5 Features (Churn pr
     """
     Plot the feature importance of a RandomForest model and save the plot if a path is provided.
     """
-    def plot_feature_importance(model, preprocessor, title="Top 5 Features (Churn prediction)", save_path=None):
-    """
-    Plot the feature importance of a RandomForest model and save the plot if a path is provided.
-    """
     # Extract the model from the pipeline
     model = model.named_steps['model']
     
