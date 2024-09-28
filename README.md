@@ -34,19 +34,17 @@ Shriyash Jagtap. (2023). E-commerce Customer for Behavior Analysis [Data set]. K
 
 ```plaintext
 User_Engagement_Analytics_Dashboard/
-├── data/
-│   ├── ecommerce_customer_data_custom_ratios.csv        # Dataset from Kaggle
-│   ├── ecommerce_customer_data_large.csv        # Dataset from Kaggle
-├── notebooks/
-│   ├── dashboard_visualization.ipynb # Power BI visualization setup
-│   ├── predictive_modeling.ipynb     # Jupyter notebook for predictive modeling
-├── scripts/
-│   ├── data_preparation.py           # Script for data cleaning and preparation
-│   ├── metric_calculation.py         # Script for calculating key metrics
-│   ├── predictive_modeling.py        # Script for predictive modeling
-│   ├── transform_data.sql            # SQL scripts for data manipulation
 ├── dashboards/
 │   ├── user_engagement_dashboard.pbix# Main Power BI dashboard file
+│   ├── user_engagement_dashboard.pdf# Main dashboard file in PDF format
+├── data/
+│   ├── ecommerce_customer_data_large.csv                        # Dataset from Kaggle
+│   ├── cleaned_ecommerce_customer_data_with_metrics.csv         # Cleaned dataset after preprocessing
+│   ├── sql_database.csv                                         # SQL database
+├── scripts/
+│   ├── extract_data.py               # Script for data cleaning, preparation and metrics calculation
+│   ├── predictive_modeling.py        # Script for predictive modeling
+│   ├── transform_data.sql            # SQL scripts for data manipulation
 ├── README.md                         # Project README with instructions
 ├── LICENSE.md                        # License information
 ```
