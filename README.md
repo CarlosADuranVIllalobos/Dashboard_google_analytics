@@ -7,6 +7,7 @@ This dashboard, built using Power BI and powered by SQL databases, offers compre
 - [Project Overview](#project-overview)
 - [Objectives](#objectives)
 - [Dataset Citation](#dataset-citation)
+- [Project Structure](#project-structure)
 - [Tools and Technologies](#tools-and-technologies)
 - [Implementation Steps](#implementation-steps)
 - [Usage](#usage)
@@ -29,6 +30,26 @@ This dashboard, developed in Power BI and fueled by SQL databases, integrates de
 
 Shriyash Jagtap. (2023). E-commerce Customer for Behavior Analysis [Data set]. Kaggle. https://www.kaggle.com/datasets/shriyashjagtap/e-commerce-customer-for-behavior-analysis?resource=download
 
+## Project Structure
+
+```plaintext
+User_Engagement_Analytics_Dashboard/
+├── data/
+│   ├── ecommerce_customer_data_custom_ratios.csv        # Dataset from Kaggle
+│   ├── ecommerce_customer_data_large.csv        # Dataset from Kaggle
+├── notebooks/
+│   ├── dashboard_visualization.ipynb # Power BI visualization setup
+│   ├── predictive_modeling.ipynb     # Jupyter notebook for predictive modeling
+├── scripts/
+│   ├── data_preparation.py           # Script for data cleaning and preparation
+│   ├── metric_calculation.py         # Script for calculating key metrics
+│   ├── predictive_modeling.py        # Script for predictive modeling
+│   ├── transform_data.sql            # SQL scripts for data manipulation
+├── dashboards/
+│   ├── user_engagement_dashboard.pbix# Main Power BI dashboard file
+├── README.md                         # Project README with instructions
+├── LICENSE.md                        # License information
+```
 
 ## Tools and Technologies
 - **SQL**: For data querying, manipulation, and efficient storage of large datasets, enabling faster and more scalable analysis.
@@ -66,21 +87,4 @@ Guidelines for contributing to the project, including how to propose changes, su
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE.md) file for details.
 
-## Project File Structure
 
-User_Engagement_Analytics_Dashboard/
-├── data/
-│   ├── ecommerce_customer_data_custom_ratios.csv        # Dataset from Kaggle
-│   ├── ecommerce_customer_data_large.csv        # Dataset from Kaggle
-├── notebooks/
-│   ├── dashboard_visualization.ipynb # Power BI visualization setup
-│   ├── predictive_modeling.ipynb     # Jupyter notebook for predictive modeling
-├── scripts/
-│   ├── data_preparation.py           # Script for data cleaning and preparation
-│   ├── metric_calculation.py         # Script for calculating key metrics
-│   ├── predictive_modeling.py        # Script for predictive modeling
-│   ├── transform_data.sql            # SQL scripts for data manipulation
-├── dashboards/
-│   ├── user_engagement_dashboard.pbix# Main Power BI dashboard file
-├── README.md                         # Project README with instructions
-├── LICENSE.md                        # License information
