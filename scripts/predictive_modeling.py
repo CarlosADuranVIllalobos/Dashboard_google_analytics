@@ -24,11 +24,11 @@ import pandas as pd
 import numpy as np
 import seaborn as sns
 import scipy
+import os
 import matplotlib.pyplot as plt
 from xgboost import XGBClassifier, XGBRegressor
-from sklearn.model_selection import train_test_split, GridSearchCV
+from sklearn.model_selection import train_test_split
 from sklearn.model_selection import RandomizedSearchCV
-from sklearn.ensemble import RandomForestClassifier, RandomForestRegressor
 from sklearn.metrics import classification_report, mean_squared_error
 from sklearn.preprocessing import StandardScaler, OneHotEncoder
 from sklearn.compose import ColumnTransformer
@@ -40,6 +40,7 @@ def load_data(filepath):
     Load the prepared dataset with metrics.
     """
     return pd.read_csv(filepath)
+
 
 def prepare_features(df):
     """
@@ -171,6 +172,10 @@ def churn_prediction(X, y, df, preprocessor):
         'Predicted Churn': y_pred
     })
     
+    # Check if the 'models' directory exists, and if not, create it
+    if not os.path.exists('../models'):
+        os.makedirs('../models')
+        print("'models' directory created.")
     # Save the trained model
     joblib.dump(clf, '../models/tuned_churn_prediction_model.pkl')
     print("Tuned churn prediction model saved as 'models/tuned_churn_prediction_model.pkl'")
@@ -235,6 +240,11 @@ def clv_prediction(X, y, df, preprocessor, apply_log=True, max_clv=160000):
         'Predicted CLV': y_pred_exp  # Store predicted CLV in original scale
     })
     
+    
+    # Check if the 'models' directory exists, and if not, create it
+    if not os.path.exists('../models'):
+        os.makedirs('../models')
+        print("'models' directory created.")
     # Save the trained model
     joblib.dump(reg, '../models/tuned_clv_prediction_model.pkl')
     print("Tuned CLV prediction model saved as 'models/tuned_clv_prediction_model.pkl'")
@@ -278,9 +288,12 @@ def plot_feature_importance(model, preprocessor, title="Top 5 Features (Churn pr
     plt.xticks(fontsize=16)
     plt.yticks(fontsize=16)
     
+    # Adjust layout to make space for longer feature names
+    plt.subplots_adjust(left=0.3)  # Add more space on the left
+
     # Save the plot if a save_path is provided
     if save_path:
-        plt.savefig(save_path)
+        plt.savefig(save_path, bbox_inches='tight')  # Ensure full plot is saved
         print(f"Feature importance plot saved as {save_path}")
     
     plt.show()
