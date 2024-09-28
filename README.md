@@ -73,7 +73,19 @@ Power_BI_Dashboard/
 
 ## Usage
 
-Instructions on how to access and interact with the dashboards, including how to perform custom analyses and interpret the data provided.
+## Usage
+
+1. **Data Preprocessing**:
+   The dataset `ecommerce_customer_data_large.csv` from Kaggle is imported and cleaned using the `extract_data.py` script. Key metrics such as Customer Lifetime Value (CLV) and Churn Rate are calculated. The cleaned data is saved as `cleaned_ecommerce_customer_data_with_metrics.csv`.
+
+2. **Model Predictions**:
+   Run `predictive_modeling.py` to train and evaluate predictive models for churn and CLV. The script saves outputs such as predictions and evaluation plots (e.g., feature importance, residuals) to the `results/` folder.
+
+3. **SQL Database Integration**:
+   Import the predictions (`predictions.csv`) and cleaned dataset into a SQL database. The `transform_data.sql` script prepares the columns and structures the database for proper usage in Power BI.
+
+4. **Power BI Dashboard**:
+   Open `BP_CI_dashboard.pbix` in Power BI. The dashboard uses the SQL database and cleaned CSV data to generate visual insights on sales, churn prediction, and customer segmentation.
 
 ## Dashboard Components
 
