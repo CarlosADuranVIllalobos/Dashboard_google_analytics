@@ -1,6 +1,6 @@
-# User Engagement Analytics Dashboard using Power BI and SQL
+# Business Performance and Customer Insights Dashboard using Power BI and SQL
 
-This repository hosts the User Engagement Analytics Dashboard project, designed to leverage extensive user interaction data from a publicly available dataset on Kaggle to provide actionable insights for optimizing user engagement and app functionality.
+This dashboard, built using Power BI and powered by SQL databases, offers comprehensive insights into sales performance, customer behavior, and user acquisition trends, leveraging advanced analytics and forecasting to support data-driven business decisions.
 
 ## Table of Contents
 
