@@ -256,6 +256,10 @@ def plot_feature_importance(model, preprocessor, title="Top 5 Features (Churn pr
     """
     Plot the feature importance of a RandomForest model and save the plot if a path is provided.
     """
+    def plot_feature_importance(model, preprocessor, title="Top 5 Features (Churn prediction)", save_path=None):
+    """
+    Plot the feature importance of a RandomForest model and save the plot if a path is provided.
+    """
     # Extract the model from the pipeline
     model = model.named_steps['model']
     
@@ -264,8 +268,13 @@ def plot_feature_importance(model, preprocessor, title="Top 5 Features (Churn pr
     
     # Extract the feature names from the preprocessor (ColumnTransformer)
     onehot_features = preprocessor.named_transformers_['cat'].get_feature_names_out()
-    numerical_features = ['Customer Age', 'Total Purchase Amount', 'Returns', 'Revenue per Purchase', 'Purchase Frequency', 'Days Since Last Purchase']
-    feature_names = list(numerical_features) + list(onehot_features)
+    numerical_features = ['Customer Age', 'Total Purchase Amount', 'Returns', 'Revenue per Purchase', 
+                          'Purchase Frequency', 'Days Since Last Purchase']
+    
+    # Add more descriptive labels for product categories but not for 'Gender_Male'
+    feature_names = list(numerical_features) + [
+        f"{name} Purchases" if "Gender" not in name else name for name in onehot_features
+    ]
     
     # Ensure feature names match the order of importances
     indices = importances.argsort()[::-1]
