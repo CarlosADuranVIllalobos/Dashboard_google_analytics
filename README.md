@@ -16,14 +16,14 @@ This dashboard, built using Power BI and powered by SQL databases, offers compre
 
 ## Project Overview
 
-The dashboard integrates detailed user interaction data from the Kaggle dataset to provide insights into app usage patterns, marketing effectiveness, and user engagement strategies. This analysis supports the organization's goals to enhance user experience and engagement through targeted marketing and app functionality improvements.
+This dashboard, developed in Power BI and fueled by SQL databases, integrates detailed user interaction data from a Kaggle dataset to provide actionable insights into sales performance, customer behavior, and user acquisition. Through predictive modeling and visual analytics, the dashboard supports key business objectives, including sales growth, customer retention, and more effective marketing strategies. The analysis helps enhance user experience and engagement by informing data-driven decisions in product development and targeted marketing efforts.
 
 ## Objectives
 
-- Integrate and analyze detailed user interaction data from the Kaggle dataset.
+- Integrate and analyze detailed business performance and user interaction data from the Kaggle dataset.
 - Develop and maintain dynamic visualizations in Power BI to reflect comprehensive user engagement metrics.
 - Use SQL and Power BI to automate the reporting process, enhancing operational efficiency.
-- Implement predictive models to forecast customer behaviors and key business outcomes.
+- Implement predictive models to forecast customer behaviours and key business outcomes.
 
 ## Dataset citation
 
@@ -33,19 +33,19 @@ Shriyash Jagtap. (2023). E-commerce Customer for Behavior Analysis [Data set]. K
 ## Tools and Technologies
 - **SQL**: For data querying, manipulation, and efficient storage of large datasets, enabling faster and more scalable analysis.
 - **Power BI**: For creating interactive and automated dashboards.
-- **Python**: For scripting data extraction, processing tasks, and predictive modeling.
+- **Python**: For scripting data extraction, processing tasks, and predictive modelling.
 - **Anaconda**: A distribution that includes Python, Spyder, Jupyter Notebooks, and other data science tools, providing a comprehensive environment for data analysis and modeling.
 - **DB Browser for SQLite**: A high-quality, open-source tool to create, design, and edit database files compatible with SQLite.
 - **SQLite ODBC Driver**: A driver that allows Power BI to connect directly to SQLite databases, enabling efficient data retrieval for dashboards.
 
 ## Implementation Steps
 
-1. **Data Access Setup**: Download the Kaggle dataset on user behaviors.
+1. **Data Access Setup**: Download the Kaggle dataset on user behaviours.
 2. **Data Extraction and Transformation**: Use Python scripts to transform and prepare data for analysis.
 3. **Metric Calculation**: Compute key metrics such as Customer Lifetime Value (CLV), Churn Rate, and Conversion Rate.
 4. **Data Transformation to SQL**: The processed data is transformed and stored in an SQL database. This step leverages SQL's strengths for efficient data querying, storage, and integration with Power BI. 
 5. **Dashboard Development**: Design and develop dynamic dashboards in Power BI.
-6. **Predictive Modeling**: Implement predictive models to forecast customer churn and lifetime value.
+6. **Predictive Modeling**: Implement predictive models to forecast customer churn and lifetime value in Python scripts.
 
 ## Usage
 
