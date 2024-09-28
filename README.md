@@ -2,7 +2,9 @@
 
 This dashboard, built using Power BI and powered by SQL databases, offers comprehensive insights into sales performance, customer behavior, and user acquisition trends, leveraging advanced analytics and forecasting to support data-driven business decisions.
 
-![Main Analysis Report](dashboard.png) <!-- This image corresponds to the Main Analysis Report -->
+<div style="text-align: center;">
+    <img src="dashboard.png" alt="Main Analysis Report" />
+</div>
 
 ## Table of Contents
 
@@ -87,7 +89,7 @@ Power_BI_Dashboard/
 4. **Power BI Dashboard**:
    Open `BP_CI_dashboard.pbix` in Power BI. The dashboard uses the SQL database and cleaned CSV data to generate visual insights on sales, churn prediction, and customer segmentation.
 
-![Features of Importance for Churn Prediction](results/feature_importance_churn.png) <!-- Showing feature importance plot in churn prediction -->
+<div style="text-align: center;"> <img src="results/feature_importance_churn.png" alt="Feature Importance" /> </div>
 
 ## Dashboard Components
 
